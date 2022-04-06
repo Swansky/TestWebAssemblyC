@@ -1,0 +1,1 @@
+emcc -o hello.html hello.c -O3 -O3 -lGL -s WASM=1 -s MAX_WEBGL_VERSION=2 -s GL_ASSERTIONS --shell-file html_template/shell_minimal.html -s NO_EXIT_RUNTIME=1  -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall"]'
